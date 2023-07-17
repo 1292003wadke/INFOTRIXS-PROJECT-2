@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Music App</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+  
+ .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .navbar ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    
+    .login-section {
+      float: right;
+      width: 200px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+    
+    .login-section h3 {
+      margin-top: 0;
+    }
+    
+    .login-section label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .login-section input[type="text"],
+    .login-section input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .login-section input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .main-content {
+      margin-top: 20px;
+    }
+    
+    .main-content h2 {
+      margin-bottom: 10px;
+    }
+    
+    .playlist {
+      margin-bottom: 20px;
+    }
+    
+    .song-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .song-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .song-item .song-title {
+      font-weight: bold;
+    }
+    
+    .search-bar {
+      margin-top: 20px;
+    }
+    
+    .search-bar input[type="text"] {
+      width: 70%;
+    }
+    
+    .search-bar input[type="submit"] {
+      width: 28%;
+      margin-left: 2%;
+    }
+.signup-section {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+    
+    .signup-section h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    
+    .signup-section label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .signup-section input[type="text"],
+    .signup-section input[type="email"],
+    .signup-section input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .signup-section input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="navbar">
+<ul>
+ <li><a href="second page.html">Home</a></li>
+      <li><a href="index.html">Browse</a></li>
+    </ul>
+</div>
+
+<div class="signup-section">
+      <h2>Sign Up</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+
+<div class="login-section">
+      <h3>Login</h3>
+      <form>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    
+    <div class="main-content">
+      <h1>Welcome to My Music App</h1>
+      
+      <h2>Music Player</h2>
+      
+      <div class="playlist">
+        <div class="song-item">
+          <img src="song1.jpg" alt="Song 1">
+          <div class="song-title">Song 1</div>
+        </div>
+        <div class="song-item">
+          <img src="song2.jpg" alt="Song 2">
+          <div class="song-title">Song 2</div>
+        </div>
+        <div class="song-item">
+          <img src="song3.jpg" alt="Song 3">
+          <div class="song-title">Song 3</div>
+        </div>
+        <!-- Add more songs here -->
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" id="searchInput" name="searchInput" placeholder="Search songs">
+        <input type="submit" value="Search">
+      </div>
+    </div>
+</body>
+</html>
