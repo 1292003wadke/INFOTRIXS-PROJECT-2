@@ -1,0 +1,19 @@
+music_streaming_app/
+├── app.py
+├── config.py
+├── models.py
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── playlist.html
+│   └── ...
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   └── ...
+├── songs/
+│   ├── song1.mp3
+│   ├── song2.mp3
+│   └── ...
+└── requirements.txt
